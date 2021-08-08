@@ -5,10 +5,11 @@ import jieba.analyse
 import docx
 import time
 
-
-FILE_DIR = ['D:/Data/code/policy-analysis/input-files/zywj/',
-            'D:/Data/code/policy-analysis/input-files/qtwj/',
-            'D:/Data/code/policy-analysis/input-files/cebx/']
+FILE_DIR = [
+    'D:/Data/code/policy-analysis/input-files/zywj/',
+    'D:/Data/code/policy-analysis/input-files/qtwj/',
+    'D:/Data/code/policy-analysis/input-files/cebx/'
+]
 FILE_SUFFIX = '.docx'
 
 RESULT_DIR = 'D:/Data/code/policy-analysis/result/'
@@ -30,8 +31,10 @@ def read_docx_file(file_path):
 
 
 def file_words_analyse(str):
-    tags = jieba.analyse.extract_tags(
-        str, topK=ANALYSE_TOPK, withWeight=True, allowPOS=ANALYSE_POS)
+    tags = jieba.analyse.extract_tags(str,
+                                      topK=ANALYSE_TOPK,
+                                      withWeight=True,
+                                      allowPOS=ANALYSE_POS)
     print(tags)
     return tags
 

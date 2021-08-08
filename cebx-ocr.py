@@ -1,12 +1,10 @@
 # encoding=utf-8
-import re
 import easyocr
 import docx
 from docx.oxml.ns import qn
 from docx.shared import Pt, RGBColor
 from wand.image import Image
 import os
-
 
 CEBX_DIR = 'D:/Data/code/policy-analysis/input-files/cebx/'
 CEBX_PDF_FILE_SUFFIX = '.pdf'
@@ -58,8 +56,7 @@ def pdf_to_docx(dir, suffix):
         if os.path.splitext(file)[1] != suffix:
             continue
         print('------start convert pdf:' + file)
-        text_list = pic_ocr_to_text(pdf_to_pic(
-            dir+file))
+        text_list = pic_ocr_to_text(pdf_to_pic(dir + file))
         text_to_docx(dir, os.path.splitext(file)[0], text_list)
 
 
