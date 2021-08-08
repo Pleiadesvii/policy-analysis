@@ -8,7 +8,7 @@ from wand.image import Image
 import os
 
 
-CEBX_DIR = 'D:/Data/code/policy-fenci/cebx/'
+CEBX_DIR = 'D:/Data/code/policy-analysis/input-files/cebx/'
 CEBX_PDF_FILE_SUFFIX = '.pdf'
 CEBX_TEST_NAME = 'P020180709553071286736'
 

@@ -6,12 +6,12 @@ import docx
 import time
 
 
-FILE_DIR = ['D:/Data/code/policy-fenci/zywj/',
-            'D:/Data/code/policy-fenci/qtwj/',
-            'D:/Data/code/policy-fenci/cebx/']
+FILE_DIR = ['D:/Data/code/policy-analysis/input-files/zywj/',
+            'D:/Data/code/policy-analysis/input-files/qtwj/',
+            'D:/Data/code/policy-analysis/input-files/cebx/']
 FILE_SUFFIX = '.docx'
 
-RESULT_DIR = 'D:/Data/code/policy-fenci/'
+RESULT_DIR = 'D:/Data/code/policy-analysis/result/'
 RESULT_NAME = 'fenci-result'
 RESULT_SUFFIX = '.csv'
 
